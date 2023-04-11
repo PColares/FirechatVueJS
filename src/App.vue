@@ -43,11 +43,7 @@
 
     <footer>
       <form @submit.prevent="SendMessage">
-        <input
-          type="text"
-          v-model="inputMessage"
-          placeholder="Mensagem"
-        />
+        <input type="text" v-model="inputMessage" placeholder="Mensagem" />
         <input class="pointer" type="submit" value="Enviar" />
       </form>
     </footer>
@@ -69,7 +65,7 @@ export default {
 
     const Logout = () => {
       state.username = "";
-    }
+    };
 
     const Login = () => {
       if (inputUsername.value != "" || inputUsername.value != null) {
@@ -131,7 +127,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-.pointer{
+.pointer {
   cursor: pointer;
 }
 .view {

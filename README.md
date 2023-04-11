@@ -1,5 +1,7 @@
 # firechat-vue
 
+Projeto para estudos de chat em tempo real. Desenvolvido com VueJS e Firebase.
+
 ## Project setup
 ```
 npm install
@@ -20,5 +22,6 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### To deploy
+
+firebase deploy
