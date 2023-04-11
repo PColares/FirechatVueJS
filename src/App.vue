@@ -5,22 +5,22 @@
   >
     <form class="login-form" @submit.prevent="Login">
       <div class="form-inner">
-        <h1>Login to Firechat</h1>
-        <label for="username">Username</label>
+        <h1>Login</h1>
+        <label for="username">Usuário</label>
         <input
           type="text"
           v-model="inputUsername"
-          placeholder="Please enter your username..."
+          placeholder="Digite seu nome de usuário..."
         />
-        <input type="submit" value="Login" />
+        <input class="pointer" type="submit" value="Entrar" />
       </div>
     </form>
   </div>
 
   <div class="view chat" v-else>
     <header>
-      <button class="logout" @click="Logout">Logout</button>
-      <h1>Welcome, {{ state.username }}</h1>
+      <button class="logout" @click="Logout">Sair</button>
+      <h1>Bem-vindo(a), {{ state.username }}</h1>
     </header>
 
     <section class="chat-box">
@@ -46,9 +46,9 @@
         <input
           type="text"
           v-model="inputMessage"
-          placeholder="Write a message..."
+          placeholder="Mensagem"
         />
-        <input type="submit" value="Send" />
+        <input class="pointer" type="submit" value="Enviar" />
       </form>
     </footer>
   </div>
@@ -130,6 +130,9 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.pointer{
+  cursor: pointer;
 }
 .view {
   display: flex;
